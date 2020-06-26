@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+header .logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-nav-container .logo h2 {
+  font-family: Pacifico;
+  font-size: 50px;
+  line-height: 15px;
+  color: #333333;
+  font-weight: 400;
+}
+header .logo-nav-container ul {
+  list-style-type: none;
+  display: flex;
+  padding-top: 20px;
+}
+header .logo-nav-container ul li {
+  margin-right: 40px;
+}
+header .logo-nav-container ul li:last-child {
+  margin-right: 0px;
+}
+header .logo-nav-container ul li a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  position: relative;
+}
+header .logo-nav-container ul li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  top: -11px;
+}
+header .logo-nav-container ul li a:hover:before {
+  background: red;
+  transition: ease 0.5s;
+}
+.block-one-wrapper {
+  background-image: url('/images/img_header.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-top: 365px;
+  padding-bottom: 70px;
+}
+.block-one-wrapper .text-img-container h1 {
+  font-family: Raleway;
+  font-size: 60px;
+  line-height: 25px;
+  font-weight: 900;
+}
+.block-one-wrapper .text-img-container p {
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+  width: 370px;
+  margin-top: 35px;
+}
+.block-one-wrapper .text-img-container .get-free-button {
+  background-color: #ff6633;
+  width: 200px;
+  height: 55px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.block-one-wrapper .text-img-container .get-free-button a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Raleway;
+  padding-top: 19px;
+  padding-left: 40px;
+  display: inline-block;
+}
+.block-one-wrapper .text-img-container .mouse {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+}
+.block-one-wrapper .text-img-container .mouse .scroll {
+  border: 2px solid black;
+  border-radius: 40%;
+  width: 22px;
+  height: 40px;
+  position: relative;
+}
+.block-one-wrapper .text-img-container .mouse .scroll .line {
+  width: 2px;
+  height: 10px;
+  border-radius: 60%;
+  background-color: black;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
